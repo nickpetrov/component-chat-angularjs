@@ -1,0 +1,5 @@
+<div ng-hide="$ctrl.chatContent.length === 0" >
+	<div ng-repeat="line in $ctrl.chatContent track by $index">
+		<div id="line.id"><image ng-src="{{line.avatar}}"></image> {{ line.name }} | {{ line.time }} | {{ line.msg }}</div>
+	</div>
+</div>
